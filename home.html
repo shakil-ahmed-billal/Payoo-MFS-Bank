@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme = 'light'>
+<html lang="en" data-theme = ''>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
                               <div class="stat-title text-white font-bold">Account balance</div>
                               <div class="stat-value">$ <span id="account-blc">2050</span></div>
                               <div class="stat-actions">
-                                <button class="btn btn-sm btn-success">Add funds</button>
+                                <button id="add-funds-btn" class="btn btn-sm btn-success">Add funds</button>
                               </div>
                             </div>
                             <div class="flex justify-center items-center">
@@ -34,16 +34,18 @@
                           </div>
                     </div>
                     <!-- Acount balance -->
+                     <!-- cash out button -->
                     <div class="flex gap-12 mt-4 ">
                         <div class="flex items-center">
                             <h1 class="text-xl font-bold">Withdraw Money</h1>
                         </div>
                         <div class="">
-                            <button class="btn btn-active btn-error font-bold">Cash Out</button>
+                            <button id="cash-out-button" class="btn btn-active btn-error font-bold">Cash Out</button>
                         </div>
                     </div>
+                     <!-- cash out button -->
                      <!-- fund add and cash out form -->
-                     <form class="hidden card-body ">
+                     <form id="add-fund-form" class="card-body ">
                         <div class="form-control">
                           <label class="label">
                             <span class="label-text">Add Your Funds Amount</span>
@@ -61,8 +63,8 @@
                         </div>
                       </form>
                      <!-- fund add and cash out form -->
-                      <!-- cash out funds form -->
-                      <form class="card-body ">
+                      <!-- cash out funds form section -->
+                      <form id="cash-out-form" class="hidden  card-body ">
                         <div class="form-control">
                           <label class="label">
                             <span class="label-text">Cash Out Amount</span>
@@ -79,12 +81,13 @@
                           <button id="cash-out-btn" class="btn btn-error">Cash Out Amount</button>
                         </div>
                       </form>
-                      <!-- cash out funds form -->
+                      <!-- cash out funds form  section-->
                   </div>
                 </div>
               </div>
         </section>
     </main>
     <script src="./Script/home.js"></script>
+    <script src="./Script/feature.js"></script>
 </body>
 </html>
