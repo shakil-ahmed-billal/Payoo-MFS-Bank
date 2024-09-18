@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = 'light'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- script file add -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- script file add -->
+    <title>Payoo AC</title>
+</head>
+<body>
+    <main>
+        <section class="flex justify-center  mt-20">
+            <div class="mockup-phone border-primary">
+                <div class="camera"></div>
+                <div class="display">
+                  <div class="artboard artboard-demo phone-2">
+                    <!-- Acount balance -->
+                    <div class="flex">
+                        <div class="stats bg-primary text-primary-content px-8 mt-10">
+                            <div class="stat">
+                              <div class="stat-title text-white font-bold">Account balance</div>
+                              <div class="stat-value">$ <span id="account-blc">2050</span></div>
+                              <div class="stat-actions">
+                                <button class="btn btn-sm btn-success">Add funds</button>
+                              </div>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <div class="w-24 rounded-full ">
+                                  <img class="rounded-full ml-4" src="./Image/model.jpg" alt="">
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                    <!-- Acount balance -->
+                    <div class="flex gap-12 mt-4 ">
+                        <div class="flex items-center">
+                            <h1 class="text-xl font-bold">Withdraw Money</h1>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-active btn-error font-bold">Cash Out</button>
+                        </div>
+                    </div>
+                     <!-- fund add and cash out form -->
+                     <form class="card-body ">
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Add Your Funds Amount</span>
+                          </label>
+                          <input id="input-number" type="text" placeholder="Amount" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Your PIN</span>
+                          </label>
+                          <input id="input-pin" type="password" placeholder="PIN Number" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                          <button id="btn-login" class="btn btn-primary">Login</button>
+                        </div>
+                      </form>
+                     <!-- fund add and cash out form -->
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+</body>
+</html>
